@@ -22,6 +22,6 @@ This project allowed me to:
 - Learn using Pandas to work with databases
 - Learn using Jira as a project management tool
 - Develop general coding skills for specific project tasks, like programming a button to open a file and then referencing that opened file in the code
-- Learn how to add complexity to the code, making all parts work together (also proper use of identation)
+- Learn how to add complexity to the code, making all parts work together (also proper use of indentation)
 
 Overall, it took me about 180 working hours to finish it. I coded, watched youtube videos to learn, read information in the manuals and different websites.
