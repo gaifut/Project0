@@ -8,7 +8,7 @@ Description of the project aims and details:
 CSV file uploaded has the info about different orders, namely, it has specifics about the client and the manufacturer.
 CSV file has some mistakes or inaccuracies in the address information of the customers
 - The program should use API to check mistakes in address info and format it in a unified manner.
-- The infomration should then be displayed in the GUI. 
+- The information should then be displayed in the GUI. 
 - The interface should have an option to add order infomration - product, and quantity to each order.
 - The system should then calculate the total price based on the item price and quantity.
 - Item information is stored in a separate DB and can be added/removed from it.
