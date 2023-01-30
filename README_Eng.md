@@ -1,4 +1,4 @@
-# Project0 Description in English
+# Project0 Description in English (my 1st project)
 
 The goal of this project was to put my newly acquired theoretical skills of using Python into practice and learn new things as well as expand my existing knowledge.
 This was my pet-project designed by myself (a friend of mine who is proficient in tech and development helped me set up the goals).
