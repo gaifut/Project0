@@ -53,9 +53,18 @@
     - Наберите ```set-executionpolicy remotesigned```
     - Вас попросят подтвердить это, укажите Y или Yes.
     - После этого активащия виртуального окружения должна заработать.
-5. Установите зависимости из requirements.txt
+4. Установите зависимости из requirements.txt
    ```pip install -r requirements. txt```
-
+5. Создайте .env файл в папке, где находится проект, в него добавьте следующие переменные (ниже указан пример с вымышленными данными):
+   ```
+   TOKEN=09dfsdfsfds8dsfw23SADFDFDS # (Dadata)
+   SECRET=fdgfd234234asdaFG331DGGsds3 # (Dadata)
+   HOST=host_name_SQL
+   USER=user_name_SQL
+   PASSWORD=password_SQL
+   DATABASE=DB_name_SQL
+   ```
+   Я использовал API сервиса DaData для корректировки и работы с адресами, но можно использовать и любой другой.
 
 ## Системные требования.
 [Системные требования проекта](https://github.com/gaifut/Project0/blob/main/requirements.txt)
