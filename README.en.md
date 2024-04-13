@@ -6,6 +6,8 @@
 - [Definitions.](#Definitions)
 - [Technology stack.](#Technology-stack)
 - [Project description.](#Project-description)
+  - [Project goals.](#Project-goals)
+  - [How it works.](#How-it-works)
 - [How to download and set up.](#How-to-download-and-set-up)
 - [System requirements.](#System-requirements)
 
