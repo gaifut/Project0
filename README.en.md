@@ -6,8 +6,8 @@
 - [Definitions.](#Definitions)
 - [Technology stack.](#Technology-stack)
 - [Project description.](#Project-description)
-- [Как скачать и запустить.](#Как-скачать-и-запустить)
-- [Системные требования.](#Системные-требования)
+- [How to download and set up.](#How-to-download-and-set-up)
+- [System requirements.](#System-requirements)
 
 ## Definitions.
 - GUI - graphical user interfance
@@ -30,38 +30,38 @@ Furthermore, the project was intended to be a part that could be used in future 
 
 The project pursued the following goals:
 - The program should use API to check for errors in customer addresses and to have a single style and logic for all the addresses displayed in the GUI after the check.
-- Информация должна отображаться в графическом интерфейсе.
-- В интерфейсе должна быть возможность длбавить информацию по каждому заказу - продукт, кол-во.
-- После этого система должна расчитать общую стоимость, основываясь на цене за 1 единицу и кол-ве.
-- Информация по позициям хранится в отдельной БД и может быть добавлена/удалена оттуда.
-- Измененный файл (с добавленной информацией по заказам) подгружается в базу данных SQL.
-### Функционал и работа.
-Проект представляет из себя 2 программы с графическим интерфейсом: основная и отдельное окно для управления продуктами. 
-При запуске основной программы на экран выводится графический интефейс с кнопками. Пользователь может:
-- подгружать файлы в формате csv.
-- выгружать файлы в базу данных (необходимо отдельно настроить).
-- вносить изменения в позиции (кол-во, продкут)
-- сохранять отредактированный файл csv.
+- Information should be displayed in the GUI.
+- The GUI should have an option to add/modify product and quantity information for each order.
+- The system should calculate the total cost for every entry.
+- Product infomration is stored in a separate DB and can be added/removed from there via a separate GUI.
+- The modified file (with added order infomration) is loaded to SQL DB.
+### How it works.
+The project consists of 2 programs with a graphical interface: the main one and a separate window for managing products. 
+When starting the main program, a graphical interface with buttons is displayed on the screen. The user can:
+- upload files in csv format.
+- upload files to the database (DB needs to be configured separately).
+- make changes to positions (quantity, product)
+- save the edited csv file.
 
-При этом при выгрузке csv файла в графический интерфейс программа связывается с API сайта Dadata и проверяет все адреса клиентов, исправляет ошибки (если они есть), в интерфейс адреса выводятся уже по единой структуре (улица, город, индекс итп).
-Система автоматически расчитывает общую стоимость по каждому продукту.
-Отдельное окно (программа) для управления продуктами предназначена для добавления/удаления позиций. После внесения в нее изменений основную программу необходимо перезапустить для того, чтобы изменения начали отражаться.
-На раннем этапе я сделал демонстрационное видео (сейчас код несколько доработан): https://youtu.be/B2OR45Mf0x0?si=3Ctbg-WKLwAhj8Gy
+At the same time, when uploading a csv file to the graphical interface, the program communicates with the Dadata website API and checks all client addresses, corrects errors (if any), addresses are displayed in the interface according to a single structure logic (street, city, zip code, etc.).
+The system automatically calculates the total cost for each product.
+A separate window (program) for managing products is designed to add/remove positions. After making changes to it, the main program must be restarted for the changes to be reflected.
+I made a demo video early on (the code is now slightly improved): https://youtu.be/B2OR45Mf0x0?si=3Ctbg-WKLwAhj8Gy
 
-## Как скачать и запустить.
-1. Fork'ните этот репозиторий.
-2. Клонируйте форкнутый репозиторий.
-3. Советую установить виртуальное окружение, например так: ```python -m venv venv```
-   и далее активируйте его: ```. venv/Scripts/activate``` (для линукса это ```. venv/bin/activate```, но данный проект реализован на Windows)
-   для деактивации можно набрать ```deactivate```
-   Вероятно, Windows выдаст вам ошибку про Scripts, для ее устранения:
-    - Зайдите в PowerShell как администратор (наберите powershell в пуск).
-    - Наберите ```set-executionpolicy remotesigned```
-    - Вас попросят подтвердить это, укажите Y или Yes.
-    - После этого активащия виртуального окружения должна заработать.
-4. Установите зависимости из requirements.txt
+## How to download and set up.
+1. Fork this repository.
+2. Clone forked repository.
+3. I recommend to install virtual inviroment, it can be done via this command for instance: ```python -m venv venv```
+   then you need to activate it with: ```. venv/Scripts/activate``` (for Linux it is ```. venv/bin/activate```, but this project was created on Windows OS)
+   to deactivate virtual environment use this command: ```deactivate```.
+   It is possible that Windows will give you Scripts error, to fix it:
+    - Run PowerShell as administrator (type powershell in the start menu to find it).
+    - Enter this command: ```set-executionpolicy remotesigned```
+    - Confirm it with Y or Yes once asked to.
+    - After this venv activation should start working.
+4. Install dependencies from requirements.txt
    ```pip install -r requirements. txt```
-5. Создайте .env файл в папке, где находится проект, в него добавьте следующие переменные (ниже указан пример с вымышленными данными):
+5. Create .env file in the same folder where the project is located add the following variables to the file (use real data instead of sample data that is provided below after = sign):
    ```
    TOKEN=09dfsdfsfds8dsfw23SADFDFDS # (Dadata)
    SECRET=fdgfd234234asdaFG331DGGsds3 # (Dadata)
@@ -70,9 +70,9 @@ The project pursued the following goals:
    PASSWORD=password_SQL
    DATABASE=DB_name_SQL
    ```
-   Я использовал API сервиса DaData для корректировки и работы с адресами, но можно использовать и любой другой.
-6. Если вы хотите переименовать название интерфейса, в строчке 59 файла testgui-1.4.py замените "Обрабатыватель данных ГМП" на ваше название.
-7. Запустите проект из файла testgui-1.4.py (в VSCode горячая клавиша запуска F5). Должно открыться окно с графическим интерфейсом. Для тестирования можно использовать csv файл Updated 3.3 qty and ppu.csv.
-8. Если вы хотите добавить/удалить позиции, то запустите файл products DB.py. Должно открыться окно с графическим интерфейсом.
-## Системные требования.
-[Системные требования проекта](https://github.com/gaifut/Project0/blob/main/requirements.txt)
+   I used DaData service API to adjust and work with addresses, but you can use any other one.
+6. If you want to rename the interface, replace “Обрабатыватель данных ГМП” with your name in line 59 of the testgui-1.4.py file.
+7. Run the project from testgui-1.4.py file (in VSCode, the run hotkey is F5). A window with a graphical user interface should open. For testing, you can use the csv file Updated 3.3 qty and ppu.csv.
+8. If you want to add/remove positions, then run the products DB.py file. A window with a graphical user interface should open.
+## System requirements.
+[Project system requirements](https://github.com/gaifut/Project0/blob/main/requirements.txt)
