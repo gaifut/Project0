@@ -51,8 +51,8 @@ A separate window (program) for managing products is designed to add/remove posi
 I made a demo video early on (the code is now slightly improved): https://youtu.be/B2OR45Mf0x0?si=3Ctbg-WKLwAhj8Gy
 
 ## How to download and set up.
-2. Clone the repository. ```git clone git@github.com:gaifut/Project0.git```
-3. I recommend to install virtual inviroment, it can be done via this command for instance: ```python -m venv venv```
+1. Clone the repository. ```git clone git@github.com:gaifut/Project0.git```
+2. I recommend to install virtual inviroment, it can be done via this command for instance: ```python -m venv venv```
    then you need to activate it with: ```. venv/Scripts/activate``` (for Linux it is ```. venv/bin/activate```, but this project was created on Windows OS)
    to deactivate virtual environment use this command: ```deactivate```.
    It is possible that Windows will give you Scripts error, to fix it:
@@ -60,9 +60,9 @@ I made a demo video early on (the code is now slightly improved): https://youtu.
     - Enter this command: ```set-executionpolicy remotesigned```
     - Confirm it with Y or Yes once asked to.
     - After this venv activation should start working.
-4. Install dependencies from requirements.txt
+3. Install dependencies from requirements.txt
    ```pip install -r requirements. txt```
-5. Create .env file in the same folder where the project is located add the following variables to the file (use real data instead of sample data that is provided below after = sign):
+4. Create .env file in the same folder where the project is located add the following variables to the file (use real data instead of sample data that is provided below after = sign):
    ```
    TOKEN=09dfsdfsfds8dsfw23SADFDFDS # (Dadata)
    SECRET=fdgfd234234asdaFG331DGGsds3 # (Dadata)
@@ -72,9 +72,9 @@ I made a demo video early on (the code is now slightly improved): https://youtu.
    DATABASE=DB_name_SQL
    ```
    I used DaData service API to adjust and work with addresses, but you can use any other one.
-6. If you want to rename the interface, replace “Обрабатыватель данных ГМП” with your name in line 59 of the testgui-1.4.py file.
-7. Run the project from testgui-1.4.py file (in VSCode, the run hotkey is F5) or with a termnial command ```python testgui-1.4.py```
+5. If you want to rename the interface, replace “Обрабатыватель данных ГМП” with your name in line 59 of the testgui-1.4.py file.
+6. Run the project from testgui-1.4.py file (in VSCode, the run hotkey is F5) or with a termnial command ```python testgui-1.4.py```
    A window with a graphical user interface should open. For testing, you can use the csv file Updated 3.3 qty and ppu.csv.
-8. If you want to add/remove positions, then run the products DB.py file. A window with a graphical user interface should open.
+7. If you want to add/remove positions, then run the products DB.py file. A window with a graphical user interface should open.
 ## System requirements.
 [Project system requirements](https://github.com/gaifut/Project0/blob/main/requirements.txt)
