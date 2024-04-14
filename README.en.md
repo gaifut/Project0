@@ -74,7 +74,8 @@ I made a demo video early on (the code is now slightly improved): https://youtu.
    ```
    I used DaData service API to adjust and work with addresses, but you can use any other one.
 6. If you want to rename the interface, replace “Обрабатыватель данных ГМП” with your name in line 59 of the testgui-1.4.py file.
-7. Run the project from testgui-1.4.py file (in VSCode, the run hotkey is F5). A window with a graphical user interface should open. For testing, you can use the csv file Updated 3.3 qty and ppu.csv.
+7. Run the project from testgui-1.4.py file (in VSCode, the run hotkey is F5) or with a termnial command ```python testgui-1.4.py```
+   A window with a graphical user interface should open. For testing, you can use the csv file Updated 3.3 qty and ppu.csv.
 8. If you want to add/remove positions, then run the products DB.py file. A window with a graphical user interface should open.
 ## System requirements.
 [Project system requirements](https://github.com/gaifut/Project0/blob/main/requirements.txt)
