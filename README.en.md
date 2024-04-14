@@ -51,8 +51,7 @@ A separate window (program) for managing products is designed to add/remove posi
 I made a demo video early on (the code is now slightly improved): https://youtu.be/B2OR45Mf0x0?si=3Ctbg-WKLwAhj8Gy
 
 ## How to download and set up.
-1. Fork this repository.
-2. Clone forked repository.
+2. Clone the repository. ```git clone git@github.com:gaifut/Project0.git```
 3. I recommend to install virtual inviroment, it can be done via this command for instance: ```python -m venv venv```
    then you need to activate it with: ```. venv/Scripts/activate``` (for Linux it is ```. venv/bin/activate```, but this project was created on Windows OS)
    to deactivate virtual environment use this command: ```deactivate```.
