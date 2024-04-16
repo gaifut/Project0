@@ -10,6 +10,7 @@
   - [How it works.](#How-it-works)
 - [How to download and set up.](#How-to-download-and-set-up)
 - [System requirements.](#System-requirements)
+- [Acknowledgements](#Acknowledgements)
 
 ## Definitions.
 - GUI - graphical user interfance
@@ -78,3 +79,6 @@ I made a demo video early on (the code is now slightly improved): https://youtu.
 7. If you want to add/remove positions, then run the products DB.py file. A window with a graphical user interface should open.
 ## System requirements.
 [Project system requirements](https://github.com/gaifut/Project0/blob/main/requirements.txt)
+
+## Acknowledgements
+Shoutout to @andreyzh for all the initial help with setting up the goals and for letting me know there was such thing as pet projects! :smiley:
